@@ -14,12 +14,13 @@ Adds the ability to (easily) append actions to Tastypie resources, without messi
 * __static__ Does the action attatch to the /resource/{action} or the /resource/{id}/action.  default=False
 
 Below urls would look something like this:
-`/api/v1/user/login/`
-`/api/v1/user/register/`
-`/api/v1/user/resetpassword/`
-`/api/v1/user/12345678/logout/`
-`/api/v1/user/12345678/changepassword/`
-
+```
+    /api/v1/user/login/
+    /api/v1/user/register/
+    /api/v1/user/resetpassword/
+    /api/v1/user/12345678/logout/
+    /api/v1/user/12345678/changepassword/
+```
 
  ```python
 

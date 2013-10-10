@@ -17,7 +17,7 @@ Below urls would look something like this:
 ```
     /api/v1/user/login/
     /api/v1/user/register/
-    /api/v1/user/resetpassword/
+    /api/v1/user/forgotpassword/
     /api/v1/user/12345678/logout/
     /api/v1/user/12345678/changepassword/
 ```
@@ -56,7 +56,7 @@ from tastypie-actions import actionurls, action
             pass
 
         @action(allowed=['post'], static=True)
-        def resetpassword(self, request, **kwargs):
+        def forgotpassword(self, request, **kwargs):
             pass
 
 ```

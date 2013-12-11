@@ -10,11 +10,11 @@ WHY?
 ---------------
 example client:
 ---------------
-* ``__actionurls(self)__`` Must be added to the prepend_urls method, though it can be concatenated to other urls.  This allows for the injection of the action urls. **REQUIRED**
-* ``__name__`` Optional parameter to set the public name (in the uri) of the action. default is the decorated method name
-* ``__allowed__`` A list of allowed http verbs (methods) for this action. default = ``['get', 'post', 'put', 'patch', 'delete']``
-* ``require_loggedin`` Does this action require an active user session to access. ``default=False``
-* ``__static__`` Does the action attatch to the ``/resource/{action}/`` or the ``/resource/{id}/action/``.  ``default=False``
+* **actionurls(self)** Must be added to the prepend_urls method, though it can be concatenated to other urls.  This allows for the injection of the action urls. **REQUIRED**
+* **name** Optional parameter to set the public name (in the uri) of the action. default is the decorated method name
+* **allowed** A list of allowed http verbs (methods) for this action. default = ``['get', 'post', 'put', 'patch', 'delete']``
+* **require_loggedin** Does this action require an active user session to access. **default=False**
+* **static** Does the action attatch to the ``/resource/{action}/`` or the ``/resource/{id}/action/``.  **default=False**
 
 Below urls::
 

@@ -27,7 +27,7 @@ Below urls::
 
 would look something like this::
 
-   from tastypie-actions import actionurls, action
+   from tastypie_actions.actions import actionurls, action
 
    class UserResource(ModelResource):
 
